@@ -1,0 +1,10 @@
+let x1= parseFloat(prompt("Ingrese x1"));
+let y1= parseFloat(prompt("Ingrese y1"));
+let x2= parseFloat(prompt("Ingrese x2"));
+let y2= parseFloat(prompt("Ingrese y2"));
+let distanciaPuntos= Math.sqrt(Math.pow((x2-x1), 2)+Math.pow(y2-y1, 2), 2);
+let distanciaOrigenP1= Math.sqrt(y1*y1+x1*x1);
+let distanciaOrigenP2= Math.sqrt(y2*y2+x2*x2);
+console.log(distanciaPuntos);
+console.log(distanciaOrigenP1);
+console.log(distanciaOrigenP2);
