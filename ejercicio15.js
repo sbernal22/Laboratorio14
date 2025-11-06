@@ -13,7 +13,7 @@ class Cliente extends Usuario{
         this.nivelDeFidelidad=nivelDeFidelidad;
     }
     mostrarInfo(){
-        return "Cliente: "+super()+" nivelDeFidelidad"+this.nivelDeFidelidad;
+        return "Cliente: "+super.mostrarInfo()+" nivelDeFidelidad"+this.nivelDeFidelidad;
     }
 }
 class Administrador extends Usuario{
@@ -24,7 +24,8 @@ class Administrador extends Usuario{
         this.editar=editar;
     }
     mostrarInfo(){
-        return "Administrador: "+super()+" Crear "+this.crear+" Eliminar "+this.eliminar+" Editar "+this.editar;
+        return "Administrador: "+super.mostrarInfo()+" Crear "+this.crear+
+        " Eliminar "+this.eliminar+" Editar "+this.editar;
     }
 }
 const listaUsuarios =[new Cliente("Sebas", "a@gmail.com", 4), 
